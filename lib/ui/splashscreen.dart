@@ -18,6 +18,7 @@ class _SplashscreenPageState extends State<SplashscreenPage> {
  @override
   void initState() {
     super.initState();
+    
     Timer(Duration(seconds: 2), () {
        navigateFromSplash();
     });

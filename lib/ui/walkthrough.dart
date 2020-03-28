@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:loginlayout/widgets/background.dart';
 import '../ui/login.dart';
 import '../ui/registration.dart';
 
@@ -11,9 +12,7 @@ class WalkthroughPage  extends StatefulWidget {
 
 class _WalkthroughPage  extends State<WalkthroughPage > {
 
-var bottomLayout = new  Container(
-
-) ; 
+//Image image  = AssetImage("assets/images/img_background_2.png") as Image;
 
 
 
@@ -66,14 +65,16 @@ final registerButton = Material(
     return Scaffold(
       body: new Stack(
         children: <Widget>[
-          new Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                   image: AssetImage("assets/images/img_background_2.png"),
-                   fit: BoxFit.cover,
-                )
-              ),
-          ),
+           backgroundView(),
+
+          // new Container(
+          //     decoration: BoxDecoration(
+          //       image: DecorationImage(
+          //          image: AssetImage("assets/images/img_background_2.png"),
+          //          fit: BoxFit.cover,
+          //       )
+          //     ),
+          // ),
           new Container(
                 padding: const EdgeInsets.only(right: 20,left: 20),
                 margin: const EdgeInsets.only(bottom: 20),
